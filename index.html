@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- =================================================================== -->
+    <!-- ======================= SEO META TAGS ============================= -->
+    <!-- =================================================================== -->
+    <title>Studio Dani Silva - Liberação Miofascial e Massoterapia</title>
+    <meta name="description" content="Alivie suas dores e tensão muscular no Studio Dani Silva. Especialista em liberação miofascial, massagem terapêutica e ventosaterapia para seu bem-estar.">
+    <meta name="keywords" content="liberação miofascial, massoterapia, ventosaterapia, massagem terapêutica, alívio de dores, tensão muscular, massoterapeuta">
+    <meta name="author" content="Studio Dani Silva">
+    <link rel="canonical" href="https://www.seusite.com.br"> <!-- IMPORTANTE: Troque pela URL final do seu site -->
+
+    <!-- Open Graph Tags (para compartilhamento no Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Studio Dani Silva - Liberação Miofascial e Massoterapia">
+    <meta property="og:description" content="Técnicas especializadas para o alívio de dores, tensão muscular e recuperação. Agende sua sessão.">
+    <meta property="og:image" content="https://i.ibb.co/5XJQyJgX/Captura-de-ecr-de-2025-10-02-11-56-43.png">
+    <meta property="og:url" content="https://www.seusite.com.br"> <!-- IMPORTANTE: Troque pela URL final do seu site -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card Tags (para compartilhamento no Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Studio Dani Silva - Liberação Miofascial e Massoterapia">
+    <meta name="twitter:description" content="Técnicas especializadas para o alívio de dores, tensão muscular e recuperação. Agende sua sessão.">
+    <meta name="twitter:image" content="https://i.ibb.co/5XJQyJgX/Captura-de-ecr-de-2025-10-02-11-56-43.png">
+    <!-- =================================================================== -->
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; overflow-x: hidden; }
+        .hero-overlay { background-color: rgba(0, 0, 0, 0.4); }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(234, 88, 12, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(234, 88, 12, 0); }
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #F97316 0%, #EA580C 100%);
+            background-size: 200% 100%;
+            background-position: 0% 0%;
+            box-shadow: 0 4px 15px rgba(234, 88, 12, 0.3);
+            transition: all 0.4s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(234, 88, 12, 0.5);
+            background-position: 100% 0%;
+            animation: none;
+        }
+
+        .btn-secondary {
+            border: 2px solid #EA580C;
+            color: #EA580C;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #FFF7ED;
+            box-shadow: 0 4px 10px rgba(234, 88, 12, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .feature-icon { background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%); }
+        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .testimonial-card { box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; }
+        .testimonial-card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
+        .floating-whatsapp { animation: float 3s ease-in-out infinite; }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .instagram-carousel-container { position: relative; max-width: 900px; margin: 0 auto; }
+        .instagram-feed { display: flex; overflow-x: scroll; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 1rem; padding-bottom: 1rem; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none; }
+        .instagram-feed::-webkit-scrollbar { display: none; }
+        .instagram-feed img { flex: 0 0 auto; width: 150px; height: 150px; object-fit: cover; scroll-snap-align: start; cursor: pointer; transition: transform 0.2s ease; border-radius: 0.5rem; }
+        .instagram-feed img:hover { transform: scale(1.03); }
+        .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(255, 255, 255, 0.8); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 10; transition: background-color 0.3s ease; cursor: pointer; }
+        .carousel-btn:hover { background-color: #fff; }
+        .carousel-btn.left { left: -20px; }
+        .carousel-btn.right { right: -20px; }
+        .video-background { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: 0.7; }
+        .parallax-section { background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+        .chat-container { height: 550px; overflow-y: auto; border-radius: 0.75rem; box-shadow: 0 10px 15px rgba(0,0,0,0.1); background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png'); background-size: 50px; padding: 1.5rem 1rem; display: flex; flex-direction: column; }
+        .chat-message-wrapper { display: flex; align-items: flex-end; margin-bottom: 0.5rem; }
+        .chat-message-wrapper.client { justify-content: flex-end; }
+        .chat-message-wrapper.chatbot { justify-content: flex-start; }
+        .chat-message-bubble { max-width: 80%; padding: 0.6rem 0.8rem; border-radius: 0.5rem; word-wrap: break-word; position: relative; font-size: 0.95rem; line-height: 1.3; }
+        .chat-message-bubble.client { background-color: #DCF8C6; margin-left: 0.5rem; border-bottom-right-radius: 0.1rem; color: #333; }
+        .chat-message-bubble.chatbot { background-color: #FFFFFF; margin-right: 0.5rem; border-bottom-left-radius: 0.1rem; color: #333; }
+        .chat-avatar { width: 2.2rem; height: 2.2rem; border-radius: 9999px; object-fit: cover; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .chat-message-wrapper.client .chat-avatar { order: 2; margin-left: 0.5rem; }
+        .chat-message-wrapper.chatbot .chat-avatar { order: 1; margin-right: 0.5rem; }
+        .chat-action-button { background-color: #25D366; color: white; padding: 0.8rem 1.5rem; border-radius: 2rem; font-weight: 600; text-align: center; display: block; margin: 1rem auto; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); }
+        .chat-action-button:hover { background-color: #1DA851; transform: translateY(-2px); }
+        .body-gradient { background: linear-gradient(to bottom right, #f8faff, #fff7ed); }
+        #image-modal { background-color: rgba(0, 0, 0, 0.8); transition: opacity 0.3s ease; opacity: 0; pointer-events: none; }
+        #image-modal.active { opacity: 1; pointer-events: auto; }
+        #close-image-modal { background: none; border: none; cursor: pointer; }
+        #image-modal > div { transform: scale(0.9); transition: transform 0.3s ease; }
+        #image-modal.active > div { transform: scale(1); }
+        body.modal-open { overflow: hidden; }
+        .instagram-video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; justify-content: center; align-items: center; }
+        .instagram-video-embed { width: 100%; max-width: 320px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); background-color: #000; }
+        .instagram-video-embed iframe { width: 100%; height: 560px; border: none; }
+        .back-to-top { transition: opacity 0.3s, transform 0.3s; opacity: 0; transform: translateY(20px); pointer-events: none; }
+        .back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+    </style>
+</head>
+<body class="text-gray-800 body-gradient">
+    <!-- Image Modal -->
+    <div id="image-modal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-[9999] hidden">
+        <div class="relative max-w-3xl max-h-[90vh] p-4">
+            <button id="close-image-modal" class="absolute -top-3 -right-3 text-white text-3xl hover:text-gray-300 transition-colors z-10">×</button>
+            <img id="modal-image" src="" alt="Ampliada" class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-lg">
+        </div>
+    </div>
+
+    <!-- Floating Buttons -->
+    <a href="#home" id="back-to-top" class="back-to-top fixed bottom-24 right-6 z-50 bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-all" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up text-lg"></i>
+    </a>
+    <a href="https://wa.me/5582996319341" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all floating-whatsapp" data-aos="zoom-in" data-aos-delay="1000">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">Studio Dani Silva</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="font-medium hover:text-orange-500 transition">Início</a>
+                <a href="#about" class="font-medium hover:text-orange-500 transition">Sobre</a>
+                <a href="#services" class="font-medium hover:text-orange-500 transition">Serviços</a>
+                <a href="#instagram-videos" class="font-medium hover:text-orange-500 transition">Vídeos</a>
+                <a href="#testimonials" class="font-medium hover:text-orange-500 transition">Depoimentos</a>
+                <a href="#chatbot-section" class="font-medium hover:text-orange-500 transition">Contato</a>
+            </nav>
+            <button class="md:hidden text-gray-600" id="menu-toggle">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-3">
+               <a href="#home" class="font-medium hover:text-orange-500 transition">Início</a>
+                <a href="#about" class="font-medium hover:text-orange-500 transition">Sobre</a>
+                <a href="#services" class="font-medium hover:text-orange-500 transition">Serviços</a>
+                <a href="#instagram-videos" class="font-medium hover:text-orange-500 transition">Vídeos</a>
+                <a href="#testimonials" class="font-medium hover:text-orange-500 transition">Depoimentos</a>
+                <a href="#chatbot-section" class="font-medium hover:text-orange-500 transition">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-16 md:py-24 overflow-hidden flex items-center justify-center min-h-[70vh]">
+        <!-- Link do vídeo MP4 DIRETO do Pexels para garantir o funcionamento -->
+        <video autoplay loop muted playsinline class="video-background">
+            <source src="https://videos.pexels.com/video-files/3998275/3998275-hd.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+        <div class="absolute inset-0 hero-overlay z-0"></div>
+
+        <div class="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center text-white text-center md:text-left">
+            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                    Alívio para suas Dores e Tensão Muscular com <span class="bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">Massoterapia Especializada</span>
+                </h1>
+                <p class="text-lg text-gray-200 mb-8">
+                    Com técnicas de liberação miofascial, massagem terapêutica e ventosaterapia, ajudo você a reencontrar o bem-estar e viver sem dores.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                    <a href="https://wa.me/5582996319341?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão." target="_blank" class="btn-primary text-white font-semibold py-3 px-8 rounded-full text-center">
+                        Agende sua Sessão
+                    </a>
+                    <a href="#services" class="btn-secondary font-semibold py-3 px-8 rounded-full text-center">
+                        Conheça os Serviços
+                    </a>
+                </div>
+                
+                <div class="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
+                    <div class="flex items-center" data-aos="fade-up" data-aos-delay="200"><div class="bg-orange-100 text-orange-600 rounded-full p-2 mr-3"><i class="fas fa-users"></i></div><div><p class="font-bold text-xl">1.871</p><p class="text-gray-300 text-sm">Seguidores</p></div></div>
+                    <div class="flex items-center" data-aos="fade-up" data-aos-delay="400"><div class="bg-amber-100 text-amber-600 rounded-full p-2 mr-3"><i class="fas fa-file-alt"></i></div><div><p class="font-bold text-xl">17</p><p class="text-gray-300 text-sm">Publicações</p></div></div>
+                    <div class="flex items-center" data-aos="fade-up" data-aos-delay="600"><div class="bg-green-100 text-green-600 rounded-full p-2 mr-3"><i class="fas fa-check-circle"></i></div><div><p class="font-bold text-xl">Clientes Satisfeitos</p><p class="text-gray-300 text-sm">Resultados Comprovados</p></div></div>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center" data-aos="fade-left" data-aos-duration="1000">
+                <div class="relative">
+                    <!-- Foto da Dani Silva -->
+                    <img src="https://i.ibb.co/5XJQyJgX/Captura-de-ecr-de-2025-10-02-11-56-43.png" alt="Dani Silva, Massoterapeuta" class="rounded-full shadow-xl w-full max-w-sm border-4 border-white/20">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center" data-aos="fade-right" data-aos-duration="800">
+                    <!-- Foto da Dani Silva -->
+                    <img src="https://i.ibb.co/5XJQyJgX/Captura-de-ecr-de-2025-10-02-11-56-43.png" alt="Foto de Dani Silva" class="rounded-2xl shadow-lg w-full max-w-xs object-cover">
+                </div>
+                <div class="md:w-2/3 md:pl-12" data-aos="fade-left" data-aos-duration="800">
+                    <h2 class="text-3xl font-bold mb-6">Sobre Dani Silva</h2>
+                    <p class="text-gray-600 mb-6">Como massoterapeuta, minha paixão é ajudar pessoas a viverem com mais qualidade de vida, livres de dores e desconfortos. Acredito no poder do toque terapêutico para restaurar o equilíbrio do corpo e da mente.</p>
+                    <p class="text-gray-600 mb-6">Minha missão é oferecer um atendimento personalizado e acolhedor, utilizando técnicas eficazes como a liberação miofascial e a ventosaterapia para tratar a causa da sua dor. Cada sessão é um passo em direção a um corpo mais leve, flexível e saudável.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-orange-50 border border-orange-100 rounded-lg px-4 py-2" data-aos="fade-up" data-aos-delay="100"><p class="font-medium text-orange-600">Alívio de Dores Crônicas</p></div>
+                        <div class="bg-amber-50 border border-amber-100 rounded-lg px-4 py-2" data-aos="fade-up" data-aos-delay="200"><p class="font-medium text-amber-600">Recuperação Muscular</p></div>
+                        <div class="bg-lime-50 border border-lime-100 rounded-lg px-4 py-2" data-aos="fade-up" data-aos-delay="300"><p class="font-medium text-lime-600">Bem-Estar e Relaxamento</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Técnicas para o seu Bem-Estar</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Cada serviço é aplicado de forma personalizada para atender às suas necessidades.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition feature-card" data-aos="fade-up" data-aos-delay="100"><div class="feature-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-layer-group text-2xl text-orange-500"></i></div><h3 class="text-xl font-bold mb-3">Liberação Miofascial</h3><p class="text-gray-600">Técnica que aplica pressão em pontos específicos do corpo para liberar o tecido fascial, aliviando dores crônicas, melhorando a flexibilidade e a mobilidade.</p></div>
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition feature-card" data-aos="fade-up" data-aos-delay="200"><div class="feature-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-hands-holding text-2xl text-amber-500"></i></div><h3 class="text-xl font-bold mb-3">Massagem Terapêutica</h3><p class="text-gray-600">Focada em aliviar a tensão em camadas mais profundas dos músculos e do tecido conjuntivo. Ideal para reduzir o estresse, dores musculares e promover relaxamento.</p></div>
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition feature-card" data-aos="fade-up" data-aos-delay="300"><div class="feature-icon w-14 h-14 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-dot-circle text-2xl text-red-500"></i></div><h3 class="text-xl font-bold mb-3">Ventosaterapia</h3><p class="text-gray-600">Terapia milenar que usa ventosas para criar sucção na pele, melhorando o fluxo sanguíneo, aliviando a dor, reduzindo inflamações e acelerando a recuperação muscular.</p></div>
+            </div>
+            <div class="mt-16 text-center" data-aos="fade-up" data-aos-delay="500">
+                <a href="https://wa.me/5582996319341?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços." target="_blank" class="btn-primary text-white font-semibold py-3 px-8 rounded-full inline-block">Quero Saber Mais!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Videos Section -->
+    <section id="instagram-videos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Veja na Prática</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Confira alguns dos nossos procedimentos e resultados no Instagram.</p>
+            </div>
+            <div class="instagram-video-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="instagram-video-embed">
+                    <iframe src="https://www.instagram.com/reel/DPMM5kWDWXA/embed/" loading="lazy"></iframe>
+                </div>
+                <div class="instagram-video-embed">
+                    <iframe src="https://www.instagram.com/reel/DNY_nkmy3Iq/embed/" loading="lazy"></iframe>
+                </div>
+                <div class="instagram-video-embed">
+                    <iframe src="https://www.instagram.com/reel/DOzYh5YDaLA/embed/" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="mt-8 text-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://www.instagram.com/studiodani_silvaal/" target="_blank" class="btn-secondary font-semibold py-3 px-8 rounded-full inline-block">
+                    <i class="fab fa-instagram mr-2"></i> Ver Mais no Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Call to Action Section -->
+    <section class="parallax-section py-24 text-white relative" style="background-image: url('https://images.pexels.com/photos/4041258/pexels-photo-4041258.jpeg');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Pronto(a) para viver sem dor?</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">Permita-se essa experiência de cuidado e bem-estar. Agende sua sessão e dê o primeiro passo para uma vida mais leve e saudável.</p>
+            <a href="https://wa.me/5582996319341?text=Olá!%20Estou%20pronto(a)%20para%20viver%20sem%20dor!%20Gostaria%20de%20agendar%20uma%20sessão." target="_blank" class="btn-primary text-white font-semibold py-3 px-8 rounded-full inline-block">Agendar Minha Sessão</a>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">O que nossos clientes dizem</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Experiências reais de pessoas que transformaram suas vidas.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white p-6 rounded-xl border border-gray-100" data-aos="fade-up" data-aos-delay="100"><div class="flex items-center mb-4"><img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Juliana" class="w-12 h-12 rounded-full mr-4"><div><h4 class="font-bold">Juliana M.</h4><p class="text-gray-500 text-sm">Cliente de Liberação Miofascial</p></div></div><p class="text-gray-600 mb-4">"A Dani tem mãos de fada! Saí da sessão me sentindo outra pessoa, sem as dores nas costas que me incomodavam há meses. Recomendo demais!"</p><div class="flex text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
+                <div class="testimonial-card bg-white p-6 rounded-xl border border-gray-100" data-aos="fade-up" data-aos-delay="200"><div class="flex items-center mb-4"><img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Marcos" class="w-12 h-12 rounded-full mr-4"><div><h4 class="font-bold">Marcos P.</h4><p class="text-gray-500 text-sm">Cliente de Ventosaterapia</p></div></div><p class="text-gray-600 mb-4">"Fiz a ventosaterapia para recuperação muscular e o resultado foi incrível. Tensão muito menor após os treinos e uma recuperação bem mais rápida."</p><div class="flex text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
+                <div class="testimonial-card bg-white p-6 rounded-xl border border-gray-100" data-aos="fade-up" data-aos-delay="300"><div class="flex items-center mb-4"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Carla" class="w-12 h-12 rounded-full mr-4"><div><h4 class="font-bold">Carla S.</h4><p class="text-gray-500 text-sm">Cliente de Massagem Terapêutica</p></div></div><p class="text-gray-600 mb-4">"A massagem terapêutica foi a melhor coisa que fiz por mim mesma. Um relaxamento profundo e um atendimento impecável. Virei cliente fiel!"</p><div class="flex text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Section -->
+    <section id="chatbot-section" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Tire suas dúvidas</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Veja uma simulação de como nosso primeiro contato pode ser rápido e esclarecedor.
+                </p>
+            </div>
+            <div class="max-w-xl mx-auto bg-white rounded-lg shadow-lg" data-aos="zoom-in-up" data-aos-delay="200">
+                <div class="chat-container" id="chat-messages"></div>
+                <div id="whatsapp-redirect-container" class="p-4 border-t border-gray-200 bg-gray-50 rounded-b-lg hidden">
+                    <a href="#" target="_blank" class="chat-action-button">
+                        <i class="fab fa-whatsapp mr-2"></i> Agendar Sessão no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Acompanhe no Instagram</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">@studiodani_silvaal - Dicas, resultados e muito mais!</p>
+            </div>
+            <div class="instagram-carousel-container" data-aos="fade-up" data-aos-delay="200">
+                <button id="scroll-left" class="carousel-btn left"><i class="fas fa-chevron-left"></i></button>
+                <div class="instagram-feed" id="instagram-feed-carousel">
+                    <!-- Todas as imagens da galeria foram substituídas pela sua foto principal -->
+                    <img src="https://i.ibb.co/5XJQyJgX/Captura-de-ecr-de-2025-10-02-11-56-43.png" alt="Studio Dani Silva" class="rounded-lg">
+                    <img src="https://i.ibb.co/5XJQyJgX/Captura-de-ecr-de-2025-10-02-11-56-43.png" alt="Studio Dani Silva" class="rounded-lg">
+                    <img src="https://i.ibb.co/5XJQyJgX/Captura-de-ecr-de-2025-10-02-11-56-43.png" alt="Studio Dani Silva" class="rounded-lg">
+                    <img src="https://i.ibb.co/5XJQyJgX/Captura-de-ecr-de-2025-10-02-11-56-43.png" alt="Studio Dani Silva" class="rounded-lg">
+                    <img src="https://i.ibb.co/5XJQyJgX/Captura-de-ecr-de-2025-10-02-11-56-43.png" alt="Studio Dani Silva" class="rounded-lg">
+                    <img src="https://i.ibb.co/5XJQyJgX/Captura-de-ecr-de-2025-10-02-11-56-43.png" alt="Studio Dani Silva" class="rounded-lg">
+                    <img src="https://i.ibb.co/5XJQyJgX/Captura-de-ecr-de-2025-10-02-11-56-43.png" alt="Studio Dani Silva" class="rounded-lg">
+                </div>
+                <button id="scroll-right" class="carousel-btn right"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="mt-8 text-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://www.instagram.com/studiodani_silvaal/" target="_blank" class="btn-secondary font-semibold py-3 px-8 rounded-full inline-block">
+                    <i class="fab fa-instagram mr-2"></i> Seguir no Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+             <div class="grid md:grid-cols-4 gap-8">
+                <div data-aos="fade-up"><h3 class="text-xl font-bold mb-4">Studio Dani Silva</h3><p class="text-gray-400">Seu espaço de alívio, recuperação e bem-estar.</p></div>
+                <div data-aos="fade-up" data-aos-delay="100"><h4 class="font-bold mb-4">Links Rápidos</h4><ul class="space-y-2"><li><a href="#home" class="text-gray-400 hover:text-white transition">Início</a></li><li><a href="#about" class="text-gray-400 hover:text-white transition">Sobre</a></li><li><a href="#services" class="text-gray-400 hover:text-white transition">Serviços</a></li><li><a href="#testimonials" class="text-gray-400 hover:text-white transition">Depoimentos</a></li></ul></div>
+                <div data-aos="fade-up" data-aos-delay="200"><h4 class="font-bold mb-4">Contato</h4><ul class="space-y-2"><li class="flex items-center"><i class="fab fa-whatsapp text-gray-400 mr-2"></i><a href="https://wa.me/5582996319341" class="text-gray-400 hover:text-white transition">(82) 99631-9341</a></li><li class="flex items-center"><i class="fas fa-map-marker-alt text-gray-400 mr-2"></i><span class="text-gray-400">Atendimento em Alagoas</span></li></ul></div>
+                <div data-aos="fade-up" data-aos-delay="300"><h4 class="font-bold mb-4">Redes Sociais</h4><div class="flex space-x-4"><a href="https://www.instagram.com/studiodani_silvaal/" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a></div></div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Studio Dani Silva. Todos os direitos reservados.</p>
+                <a href="https://instagram.com/joaoricardo.pe" class="text-gray-400 hover:text-white text-sm transition">Desenvolvido por João Ricardo - Engenheiro da Computação</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        document.querySelectorAll('#mobile-menu a, a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if(this.parentElement.id === 'mobile-menu') {
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+                const targetId = this.getAttribute('href');
+                if (targetId.startsWith('#')) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerOffset = document.querySelector('header').offsetHeight; 
+                        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                        const offsetPosition = elementPosition - headerOffset - 20;
+                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
+        const instagramCarousel = document.getElementById('instagram-feed-carousel');
+        const scrollLeftBtn = document.getElementById('scroll-left');
+        const scrollRightBtn = document.getElementById('scroll-right');
+        if(instagramCarousel) {
+            scrollLeftBtn.addEventListener('click', () => instagramCarousel.scrollBy({ left: -200, behavior: 'smooth' }));
+            scrollRightBtn.addEventListener('click', () => instagramCarousel.scrollBy({ left: 200, behavior: 'smooth' }));
+        }
+
+        const imageModal = document.getElementById('image-modal');
+        const modalImage = document.getElementById('modal-image');
+        const closeImageModalBtn = document.getElementById('close-image-modal');
+        
+        function openImageModal(src) {
+            modalImage.src = src;
+            imageModal.classList.add('active'); 
+            imageModal.classList.remove('hidden'); 
+            document.body.classList.add('modal-open'); 
+        }
+
+        function closeImageModal() {
+            imageModal.classList.remove('active');
+            setTimeout(() => {
+                imageModal.classList.add('hidden');
+                document.body.classList.remove('modal-open'); 
+            }, 300); 
+        }
+
+        document.querySelectorAll('#instagram-feed-carousel img').forEach(img => {
+            img.addEventListener('click', () => openImageModal(img.src));
+        });
+        if(closeImageModalBtn) closeImageModalBtn.addEventListener('click', closeImageModal);
+        if(imageModal) imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal) closeImageModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && imageModal.classList.contains('active')) closeImageModal();
+        });
+
+        const chatMessagesContainer = document.getElementById('chat-messages');
+        const whatsappRedirectContainer = document.getElementById('whatsapp-redirect-container');
+        const whatsappRedirectButton = whatsappRedirectContainer.querySelector('a');
+        const clientAvatar = 'https://randomuser.me/api/portraits/men/75.jpg';
+        const chatbotAvatar = 'https://i.ibb.co/5XJQyJgX/Captura-de-ecr-de-2025-10-02-11-56-43.png';
+        const WHATSAPP_PHONE_NUMBER = '5582996319341';
+
+        const chatFlow = [
+            { sender: 'client', text: 'Olá! 👋 Tenho sentido muitas dores nas costas, o que vocês recomendam?' },
+            { sender: 'chatbot', text: 'Olá! Seja muito bem-vindo(a) ao Studio Dani Silva! Sou a assistente virtual da Dani. Que bom te ver aqui. 😊 Para dores nas costas, a Liberação Miofascial e a Massagem Terapêutica são excelentes. Elas ajudam a soltar a musculatura e aliviar os pontos de tensão.' },
+            { sender: 'client', text: 'Parece bom! Qual a diferença entre elas?' },
+            { sender: 'chatbot', text: 'Ótima pergunta! A Liberação Miofascial é mais focada em pontos de gatilho para restaurar a mobilidade, enquanto a Massagem Terapêutica promove um relaxamento mais geral e profundo da musculatura. Ambas são ótimas! 💪' },
+            { sender: 'client', text: 'Entendi. Acho que quero experimentar a Liberação Miofascial.' },
+            { sender: 'chatbot', text: 'Excelente escolha! Tenho certeza que você sentirá um grande alívio. O próximo passo é conversarmos pelo WhatsApp para encontrar o melhor horário para você. Vamos agendar?' },
+            { sender: 'client', text: 'Sim, vamos!' },
+            { sender: 'chatbot', text: 'Perfeito! ✨ Clicando no botão abaixo, você será direcionado para o WhatsApp da Dani para agendarmos sua sessão. Estamos te esperando para cuidar de você!' , action: 'whatsapp' }
+        ];
+
+        let currentMessageIndex = 0;
+        let chatbotInitialized = false;
+
+        async function addChatMessage(sender, text) {
+            const messageWrapper = document.createElement('div');
+            messageWrapper.className = `chat-message-wrapper ${sender}`;
+            const avatarImg = document.createElement('img');
+            avatarImg.src = sender === 'client' ? clientAvatar : chatbotAvatar;
+            avatarImg.className = 'chat-avatar';
+            const messageBubble = document.createElement('div');
+            messageBubble.className = `chat-message-bubble ${sender}`;
+            messageBubble.innerHTML = `<div>${text}</div>`;
+            messageWrapper.appendChild(messageBubble); 
+            messageWrapper.appendChild(avatarImg); 
+            chatMessagesContainer.appendChild(messageWrapper);
+            chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
+            messageWrapper.style.opacity = '0';
+            messageWrapper.style.transform = sender === 'client' ? 'translateX(20px)' : 'translateX(-20px)';
+            await new Promise(r => setTimeout(r, 50)); 
+            messageWrapper.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            messageWrapper.style.opacity = '1';
+            messageWrapper.style.transform = 'translateX(0)';
+        }
+
+        async function processChatFlow() {
+            if (currentMessageIndex >= chatFlow.length) return;
+            const messageData = chatFlow[currentMessageIndex];
+            const delay = (messageData.sender === 'client' ? 1500 : 2000);
+            await new Promise(r => setTimeout(r, delay));
+            await addChatMessage(messageData.sender, messageData.text);
+            if (messageData.action === 'whatsapp') {
+                const prefilledMessage = encodeURIComponent('Olá, Dani! Vi a simulação no site e gostaria de agendar minha sessão de Liberação Miofascial.');
+                whatsappRedirectButton.href = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${prefilledMessage}`;
+                whatsappRedirectContainer.classList.remove('hidden');
+                chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
+                return;
+            }
+            currentMessageIndex++;
+            processChatFlow(); 
+        }
+
+        const chatbotObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !chatbotInitialized) {
+                    chatbotInitialized = true;
+                    processChatFlow(); 
+                    chatbotObserver.disconnect(); 
+                }
+            });
+        }, { threshold: 0.5 }); 
+        chatbotObserver.observe(document.getElementById('chatbot-section'));
+
+    </script>
+</body>
+</html>
